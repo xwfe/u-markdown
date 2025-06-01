@@ -1,0 +1,45 @@
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+    #editor {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+    .ace_hidden-cursors {
+      opacity: 0
+    }
+    .ace_bracket {
+      border: none!important;
+    }
+    .ace_scroller.ace_scroll-left {
+      box-shadow: none;
+    }
+    .ace-monokai .ace_gutter {
+      background-color: #303133!important;
+    }
+    .ace-tm .ace_gutter {
+      background-color: #FFFFFF!important;
+    }
+
+    @media (prefers-color-scheme: light) {
+      body {
+        background-color: #fff;
+      }
+      #editor {
+        background-color: #fff;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #303133;
+      }
+      #editor {
+        background-color: #303133;
+      }
+    }
