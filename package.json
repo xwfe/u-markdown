@@ -1,0 +1,14 @@
+{
+  "name": "u-markdown",
+  "version": "1.0.0",
+  "description": "Build setup for u-markdown plugin",
+  "scripts": {
+    "build:ts": "tsc -p tsconfig.json && tsc -p code-editor/tsconfig.json",
+    "build:sass": "sass src/styles/github-markdown.scss dist/github-markdown.css && sass code-editor/styles/editor.scss code-editor/dist/editor.css && sass code-editor/styles/markdown.scss code-editor/dist/markdown.css",
+    "build": "npm run build:ts && npm run build:sass"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "sass": "^1.69.0"
+  }
+}
